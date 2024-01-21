@@ -5,13 +5,16 @@ int main()
 {
     float W, H, BMI, sq;
     int min, max, j, i;
+    
     cout << "Enter your weight in kg\n" ;
     cin >> W;
     cout << "Enter your height in metre\n" ;
     cin >> H;
+
     sq=H*H;
     BMI=W/sq;
     cout << "Body Mass Index =" << BMI << "\n";
+
     for(i=0;i<10000;i++)
     {
     min=i/sq;
@@ -28,6 +31,7 @@ int main()
     else
     continue;
     }
+
     if(BMI>24.9)
     {
     if(BMI>30)
@@ -39,5 +43,6 @@ int main()
     cout << "It is at underweight range.\nYour healthy weight range is between " << i << "kg" << " and " << j << "kg" ;
     else
     cout << "It is at healthy weight range.\nYou want to maintain your weight in between " << i << "kg" << " and " << j << "kg" ;
+
     return 0;
 }
